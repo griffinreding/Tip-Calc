@@ -16,8 +16,8 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var twentyPctButton: UIButton!
     @IBOutlet weak var splitNumberLabel: UILabel!
     
-    var currTip: String?
-    var numPeople: Int?
+    var currTip: Double = 0.1
+    var numPeople = 2
     var tipCalcBrain = TipCalcBrain()
 
     @IBAction func tapAnywhere(_ sender: UITapGestureRecognizer) {
@@ -32,22 +32,22 @@ class CalculatorViewController: UIViewController {
                 zeroPctButton.isSelected = true
                 tenPctButton.isSelected = false
                 twentyPctButton.isSelected = false
-                currTip = "zero"
+                currTip = 0
             case tenPctButton:
                 zeroPctButton.isSelected = false
                 tenPctButton.isSelected = true
                 twentyPctButton.isSelected = false
-                currTip = "ten"
+                currTip = 0.1
             case twentyPctButton:
                 zeroPctButton.isSelected = false
                 tenPctButton.isSelected = false
                 twentyPctButton.isSelected = true
-                currTip = "twenty"
+                currTip = 0.2
             default:
                 zeroPctButton.isSelected = false
                 tenPctButton.isSelected = false
                 twentyPctButton.isSelected = true
-                currTip = "ten"
+                currTip = 0.1
         }
     }
     
@@ -60,13 +60,10 @@ class CalculatorViewController: UIViewController {
     @IBAction func calculatedPressed(_ sender: UIButton) {
         let billNoTip = Float(billTextField.text!)
 
-        if numPeople == nil {
-            numPeople = 2
-        }
         tipCalcBrain.finalCalculation(
             billNoTip: billNoTip!,
-            numPeople: numPeople!,
-            currTip: currTip!
+            numPeople: numPeople,
+            currTip: currTip
         )
         self.performSegue(withIdentifier: "goToResults", sender: self)
     }

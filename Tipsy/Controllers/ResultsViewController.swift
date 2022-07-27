@@ -11,13 +11,13 @@ import UIKit
 class ResultsViewController: UIViewController {
     
     var totalPer: String?
-    var peeps: Int?
-    var perc: Int?
+    var peeps: Int = 2
+    var perc: Int = 10
 
     override func viewDidLoad() {
         super.viewDidLoad()
         totalLabel.text = "$\(totalPer!)"
-        settingsLabel.text = "Split between \(peeps!) people, with \(perc!)% tip."
+        settingsLabel.text = "Split between \(peeps) people, with \(perc)% tip."
     }
     
     @IBOutlet weak var totalLabel: UILabel!
