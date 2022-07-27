@@ -18,10 +18,10 @@ class CalculatorViewController: UIViewController {
     
     var currTip: String?
     var numPeople: Int?
-    var finalPer: String?
     var tipCalcBrain = TipCalcBrain()
 
     @IBAction func tapAnywhere(_ sender: UITapGestureRecognizer) {
+        billTextField.endEditing(true)
         print("tap recorded")
     }
     

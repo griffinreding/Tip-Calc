@@ -201,6 +201,9 @@
                             <constraint firstItem="Ptx-Zl-eGc" firstAttribute="trailing" secondItem="C9X-5R-fQ6" secondAttribute="trailing" id="uaf-hV-nhR"/>
                             <constraint firstItem="EOv-ot-7Fq" firstAttribute="top" secondItem="C9X-5R-fQ6" secondAttribute="bottom" constant="40" id="vpj-kh-cbm"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="42m-e2-ey2" appends="YES" id="l4v-cI-Pb8"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="billTextField" destination="wcN-ka-Q4F" id="w95-pf-zPh"/>
@@ -217,6 +220,7 @@
                         <action selector="tapAnywhere:" destination="BYZ-38-t0r" id="pPE-94-GPf"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="42m-e2-ey2"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </scene>
