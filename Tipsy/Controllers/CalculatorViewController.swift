@@ -61,7 +61,7 @@ class CalculatorViewController: UIViewController {
         let billNoTip = Float(billTextField.text!)
 
         tipCalcBrain.finalCalculation(
-            billNoTip: billNoTip!,
+            billNoTip: billNoTip ?? 0.0,
             numPeople: numPeople,
             currTip: currTip
         )
