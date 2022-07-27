@@ -13,7 +13,7 @@
 		ADB6895A2326708D006D4E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB689582326708D006D4E2B /* Main.storyboard */; };
 		ADB6895C2326708E006D4E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895B2326708E006D4E2B /* Assets.xcassets */; };
 		ADB6895F2326708E006D4E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */; };
-		AE7E932A2890C61200B21F70 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E93292890C61200B21F70 /* Models.swift */; };
+		AE7E932A2890C61200B21F70 /* TipCalcBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E93292890C61200B21F70 /* TipCalcBrain.swift */; };
 		AEDCB79A288C609C002D1723 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDCB799288C609C002D1723 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 		ADB6895B2326708E006D4E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB6895E2326708E006D4E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB689602326708E006D4E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE7E93292890C61200B21F70 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		AE7E93292890C61200B21F70 /* TipCalcBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalcBrain.swift; sourceTree = "<group>"; };
 		AEDCB799288C609C002D1723 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,19 +62,27 @@
 			children = (
 				ADB689522326708D006D4E2B /* AppDelegate.swift */,
 				ADB689542326708D006D4E2B /* SceneDelegate.swift */,
+				AE7E932B2891A22700B21F70 /* Models */,
 				AEDCB79B288C60AE002D1723 /* Controllers */,
 				ADB689582326708D006D4E2B /* Main.storyboard */,
-				ADB6895B2326708E006D4E2B /* Assets.xcassets */,
 				ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */,
+				ADB6895B2326708E006D4E2B /* Assets.xcassets */,
 				ADB689602326708E006D4E2B /* Info.plist */,
 			);
 			path = Tipsy;
 			sourceTree = "<group>";
 		};
+		AE7E932B2891A22700B21F70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE7E93292890C61200B21F70 /* TipCalcBrain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AEDCB79B288C60AE002D1723 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE7E93292890C61200B21F70 /* Models.swift */,
 				ADB689562326708D006D4E2B /* CalculatorViewController.swift */,
 				AEDCB799288C609C002D1723 /* ResultsViewController.swift */,
 			);
@@ -156,7 +164,7 @@
 				ADB689532326708D006D4E2B /* AppDelegate.swift in Sources */,
 				ADB689552326708D006D4E2B /* SceneDelegate.swift in Sources */,
 				AEDCB79A288C609C002D1723 /* ResultsViewController.swift in Sources */,
-				AE7E932A2890C61200B21F70 /* Models.swift in Sources */,
+				AE7E932A2890C61200B21F70 /* TipCalcBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
