@@ -27,12 +27,12 @@ struct TipCalcBrain {
     }
     
     mutating func finalCalculation(
-        billNoTip: Float,
+        billNoTip: Double,
         numPeople: Int,
         currTip: Double) {
             
-        var tipAmount: Float = 0.0
-        var perPerson: Float = 0.0
+        var tipAmount: Double = 0.0
+        var perPerson: Double = 0.0
         numPeeps = numPeople
         
         switch currTip {
@@ -49,7 +49,7 @@ struct TipCalcBrain {
                 tipAmount = billNoTip * 0.1
                 perc = 10
         }
-        perPerson = (billNoTip + tipAmount) / Float(numPeople)
+        perPerson = (billNoTip + tipAmount) / Double(numPeople)
         finalPer = String(format: "%.2f", perPerson)
     }
 }

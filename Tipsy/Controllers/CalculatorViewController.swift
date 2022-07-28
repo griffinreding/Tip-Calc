@@ -58,7 +58,7 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculatedPressed(_ sender: UIButton) {
-        let billNoTip = Float(billTextField.text!)
+        let billNoTip = Double(billTextField.text!)
 
         tipCalcBrain.finalCalculation(
             billNoTip: billNoTip ?? 0.0,
